@@ -29,7 +29,7 @@ spec:
           claimName: wordpress-pvc
       containers:
         - name: wordpress-container
-          image: divyajeetsingh/myrepo:mysql
+          image: wordpress
           ports:
             - containerPort: 80
           volumeMounts:
