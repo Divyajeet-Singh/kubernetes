@@ -6,7 +6,7 @@ metadata:
     app: wordpress
     environment: dev
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: wordpress
@@ -31,7 +31,7 @@ spec:
         - name: wordpress-container
           image: wordpress
           ports:
-            - containerPort: 82
+            - containerPort: 80
           volumeMounts:
           - name: wordpress-persistent-storage
             mountPath: /var/www/html
