@@ -12,6 +12,6 @@ spec:
     environment: dev
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 82
+      targetPort: 82
       nodePort: 32001
