@@ -35,4 +35,4 @@ spec:
             - containerPort: 9090
           volumeMounts:
           - name: prometheus-persistent-storage
-            mountPath: /data
+            mountPath: /etc/prometheus
