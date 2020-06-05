@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: monitoring
+  namespace: default
   name: prometheus-deployment
   labels:
     app: prometheus
@@ -35,4 +35,4 @@ spec:
             - containerPort: 9090
           volumeMounts:
           - name: prometheus-persistent-storage
-            mountPath: /etc/prometheus
+            mountPath: /data
